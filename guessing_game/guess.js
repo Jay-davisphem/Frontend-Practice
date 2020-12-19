@@ -17,6 +17,7 @@ function checkGuess() {
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
   }
+
   guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {

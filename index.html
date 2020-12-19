@@ -2,12 +2,20 @@
 <html>
   <head>
     <title>Oluwafemi's Porfolio</title>
+    <link rel='stylesheet' type='text/css' href='css/styles.css'
   </head>
   <body>
     <header>
-      <img src="">
+      <img srcset="assets/images/myimg11.jpg 400w,
+                    assets/images/myimg11.png 480w"
+           sizes="(max-width: 1200px) 400px, 480px"
+           src="assets/images/myimg11.jpg"
+           alt='author profile picture'>
+
       <p>Hi, my name is David Oluwafemi. I am a Data Scientist and a passionate Web developer. I presently study Computer Engineering at Obafemi Awolowo University, Nigeria</p>
-      <section class='fin-projects'>
+    </header>
+    <main>
+    <section class='fin-projects'>
         <h1>My finished Projects</h1>
         <section>
           <h3>Simple Mozzila Website</h3>
@@ -20,5 +28,6 @@
           <button><a href="guessing_game/guess.html">Guessing Game</a></button>
         </section>
       </section>
+    </main>
   </body>
 </html>

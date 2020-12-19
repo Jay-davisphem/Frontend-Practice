@@ -1,0 +1,81 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: ghostwhite;
+  position: relative;
+  text-align: center;
+}
+header{
+  background-color: rgba(210,120,100,0.5);
+  height: 20%;
+  margin: 0 10%;
+  border: 20px double rgba(20,200,220,0.5);
+  border-top: none;
+}
+header img{
+  margin-top: 10px;
+  box-shadow: 9px 9px 5px rgba(200,200,200,0.5),
+            9px -9px 5px rgba(20,200,120,0.5);
+}
+header p{
+    font-size: 3em; 
+    color: rgba(20,200,120,0.95);
+}
+main{
+  background-color: rgba(210,120,100,0.5);
+  height: 60%;
+  width: 80%;
+  margin: 0 10%;
+}
+main section h1{
+  margin: 20px 0;
+  font-size: 3em;
+  background-color: orange;
+  color: white;
+}
+.fin-projects h1{
+  background-color: green;
+}
+section section{
+  border-bottom: 5px solid orange;
+}
+.fin-projects section{
+  border-bottom: 5px solid green;
+}
+section section h3{
+  margin: 0;
+  font-size: 2em;
+  color: blue;
+}
+section section p{
+  margin: 10px 0; 
+  font-size: 2em;
+  color: white;
+}
+section section button{
+  background-color: blue;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+section section button a{
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+section section button:hover{
+  background-color: orange;
+}
+.fin-projects section button:hover{
+  background-color: green;
+}
