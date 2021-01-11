@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* || fonts */
+
+@font-face {
+    font-family: 'trykkerregular';
+    src: url('fonts/trykker-regular-webfont.woff2') format('woff2'),
+         url('fonts/trykker-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alatsiregular';
+    src: url('fonts/alatsi-regular-webfont.woff2') format('woff2'),
+         url('fonts/alatsi-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* || declare font variable */
+
+html{
+  --para: 'trykkerregular';
+  --hd: 'alatsiregular';
+}
+
+html{
+  font-family: var(--para);
+  font-size: 10px;
+}
+
+h1, h2{
+  font-family: var(--hd);
+  letter-spacing: 0.2rem;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+
+h2{
+  font-size: 2.4rem;
+}
+p, ol, ul{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+header{
+  text-align: center;
+}
+
+section h2 ~ p::first-line{
+  text-indent: 2rem;;
+}
+
+/* || links (LoVe HAtes Fear) */
+a{
+  outline: none;
+  color: #a66;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active, nav ul li:hover{
+  outline: none;
+  background-color: #a66;
+  color: white;
+}
+
+a:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+a[href*="http"]{
+  background-image: url(extlink.png);
+  background-repeat: no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: right;
+  padding-right: 1.7rem;
+}
+
+ol, ul{
+  margin-left: -2rem;
+}
+li{
+  list-style-type: none;
+}
+section ul li::before,
+aside ul li::before,
+section ol li::before{
+  content: "♠";
+}
+
+nav ul li{
+  display: block;
+  list-style-type: none;
+  color: #a66;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  padding:  2rem 0;
+  border: 0.1rem solid #a66;
+  border-left: none;
+  border-right: none;
+}
+nav ul li a{
+  text-decoration: none;
+  outline: none;
+  text-shadow: 1px 1px white;
+}
+
+nav ul li a:hover{
+  background-color: none;
+  color: white;
+}
