@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  <!-- CSS_ADSBLOCK_START -->
+<link rel="stylesheet" href="https://adblockers.opera-mini.net/css_block/aaa/domainless-unknown.css" type="text/css" />
+<link rel="stylesheet" href="https://adblockers.opera-mini.net/css_block/aaa/page_1_2emjf5u4lz6jy5osl5cmq95ecjdq1uau454ao5vcvrqipn5pxc.css" type="text/css" />
+<link rel="stylesheet" href="https://adblockers.opera-mini.net/css_block/aaa/domainless.css" type="text/css" />
+<!-- CSS_ADSBLOCK_END -->
+</head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  <script>
+let bandInfo;
+const section document.querySelector('section');
+// Put your code here
+
+const ybnl = {
+  name: 'YBNL',
+  nationality: 'Nigeria',
+  genre: 'blues',
+  members: 900,
+  formed: 1970,
+  split: false,
+  albums: [
+    {
+      name: 'Abule',
+      released: 1994
+    },
+    {
+      name: 'Introduction',
+      released: 2018
+    }
+  ]
+};
+
+bandInfo = `${ybnl.name} is a ${ybnl.nationality} band formed in year ${ybnl.formed}. They have ${ybnl.members} members and they sing ${ybnl.genre}. They have ${ybnl.albums.length} albums presently. The albums are ${ybnl.albums[0].name}, ${ybnl.albums[1].name}.`;
+// Don't edit the code below here
+
+let para1 = document.createElement('p');
+para1.textContent = bandInfo;
+section.appendChild(para1);
+  </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.clock{
+  grid-column: 1 / 4;
+  grid-row: 1;
+  text-align: center;
+  font-size: 6rem;
+}
+.a{
+  border-radius: 20px;
+  outline: none;
+  border: 3px transparent;
+  background: green;
+  font-size: 5rem;
+  color: white;
+  font-weight: bolder;
+}
+.a:hover{
+  border: 3px solid darkgreen;
+  box-shadow: 5px 5px 4px red;
+}
+.start{
+  grid-column: 1;
+  grid-row: 2 / 6;
+}
+.stop{
+  grid-column: 2;
+  grid-row: 2 / 6;
+  background: red;
+}
+.reset{
+  grid-column: 3;
+  grid-row: 2 / 6;
+  background: yellow;
+}
