@@ -79,3 +79,9 @@ section section button:hover{
 .fin-projects section button:hover{
   background-color: green;
 }
+
+@media (orientation: landscape){
+  body{
+    background: #3489fa56;
+  }
+}
