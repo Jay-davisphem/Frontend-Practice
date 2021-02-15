@@ -26,14 +26,37 @@ body {
   nav {
     background-color: #000;
     padding: .5em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
-  
+
+  nav .box1{
+    height: 2px;
+    width: 35px;
+    margin: 5px;
+    margin-left: 7.5px;
+    border: none;
+    background-color: white;
+  }
+  .menu{
+    height: 26px;
+    padding: 1px;
+    width: 50px;
+    border: 2px solid #333;
+  }
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: none;
   }
-  
+   nav:hover > ul{
+    display: block;
+  }
+  .menu:hover, .menu:active, .menu:focus{
+    background: #333;
+  }
   nav a {
     color: #fff;
     text-decoration: none;
@@ -56,6 +79,9 @@ body {
 
     nav ul li{
       flex: 1 1 auto;
+    }
+    .menu{
+      display: none;
     }
 
     .grid{
